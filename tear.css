@@ -1,0 +1,164 @@
+
+.frame {
+  width: 1000px;
+  margin: 0 auto;
+  border: 1px solid #aaa;
+}
+
+.header {
+  padding:90px 50px;
+  text-align: center;
+  background: #eee;
+  margin-bottom: 20px;
+}
+
+.main_title {
+  font-size: 2em;
+  font-weight: bold;
+  background: #5457de;
+  color: #fff;
+  display: inline-block;
+  padding: 0 8px;
+}
+
+.container {
+  overflow: hidden;
+}
+
+.navi {
+  float: left;
+  width: 150px;
+  background: #333;
+  color: #fff;
+  margin-right: 50px;
+}
+.navi-list {
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+}
+.navi-item {
+  margin: 4px 0;
+}
+.navi-link {
+  display: block;
+  text-decoration: none;
+  padding: 4px 10px;
+  color: #fff;
+}
+
+.navi-link:hover {
+  background: #5457de;
+}
+
+.content {
+  float: left;
+  width: 750px;
+}
+
+.footer {
+  text-align: center;
+  border-top: 1px solid #aaa;
+  margin: 20px 20px 0;
+  font-size: 12px;
+}
+
+.tear_header{
+  height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #E6E6E6;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.tear_img{
+  width: 200px;
+  height: 200px;
+  float: left;
+}
+
+.tear_content{
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  vertical-align: middle;
+  width: 530px;
+  height: 100%;
+  float: right;
+}
+
+img { 
+  max-width: 100%; 
+  height: auto; 
+  max-height: 100%;
+}
+
+.tear_map{
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  float: left;
+  width: 750px;
+  height: 50px;
+  text-align: center;
+  line-height: 12px;
+}
+
+.map_left{
+  padding-bottom: 10px;
+  padding-top: 10px;
+  float: left;
+  width: 300px;
+  height: 300px;
+  padding-left: 100px;
+}
+
+iframe{
+  width: 300px;
+  height: 280px;
+}
+
+.map_right{
+  float: left;
+  width: : 300px;
+  height: 300px;
+  line-height: 20px;
+  padding-left: 20px;
+}
+
+button{
+  background:#1AAB8A;
+  color:#fff;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+button:hover{
+  background:#fff;
+  color:#1AAB8A;
+}
+button:before,button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #1AAB8A;
+  transition:400ms ease all;
+}
+button:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+button:hover:before,button:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
