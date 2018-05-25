@@ -2,6 +2,7 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="main.css">
+  <script type="text/javascript" src="main.js"></script>
 	<title>Changchelin Guide - Main Page</title>
 </head>
 <body>
@@ -11,7 +12,7 @@
 	</div>
 	<!-- //header -->
 	<div class="container">
-    <div class="navi">
+    <div class="navi" id="my_navi">
       <ul class="navi-list">
         <li class="navi-item"><a href="#session1" class="navi-link">소개</a></li>
         <li class="navi-item"><a href="#session2" class="navi-link">5성 음식점</a></li>
@@ -23,6 +24,9 @@
         <li class="navi-item"><a href="#session8" class="navi-link">링크</a></li>
       </ul>
     </div>
+    <script type="text/javascript">
+      new Floating(document.getElementById('my_navi'),(document.body.clientWidth/2) + 530,10,0,0)
+    </script>
     <!-- //navi -->
     <div class="content">
       <h1 id="session1">소개</h1><!-- 세션 1 -->

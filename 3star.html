@@ -3,6 +3,7 @@
 <head>
 	<title>3성 음식점</title>
 	<link rel="stylesheet" type="text/css" href="tear.css">
+	<script type="text/javascript" src="main.js"></script>
 </head>
 <body>
 <div class="frame">
@@ -11,8 +12,8 @@
 	</div>
 	<!-- //header -->
 	<div class="container">
-	    <div class="navi">
-	      <ul class="navi-list">
+	    <div class="navi" id="my_navi">
+	      <ul class="navi-list" >
 	        <li class="navi-item"><a href="#1" class="navi-link">장수국수</a></li>
 	        <li class="navi-item"><a href="#2" class="navi-link">수유리우동</a></li>
 	        <li class="navi-item"><a href="#3" class="navi-link">고씨네</a></li>
@@ -32,8 +33,12 @@
 	        <li class="navi-item"><a href="#17" class="navi-link">할매순대국</a></li>
 	        <li class="navi-item"><a href="#18" class="navi-link">토니버거</a></li>
 	        <li class="navi-item"><a href="#19" class="navi-link">학교종이 땡떙떙</a></li>
+	        <li class="navi-item"><a href="#20" class="navi-link">오늘의 밥집</a></li>
 	      </ul>
 	    </div>
+	    <script type="text/javascript">
+	      new Floating(document.getElementById('my_navi'),(document.body.clientWidth/2) + 530,10,0,0)
+	    </script>
 	    <!-- //navi -->
 	    
 	    <div class="content">
@@ -52,7 +57,7 @@
 		   	</div>
 
 		   	<div class="tear_map">
-	   			<p>주소 : 서울시 노원구 월계동 465-11,2층</p>
+	   			<p><a onclick="find_road(this)">주소 : 서울시 노원구 월계동 465-11,2층</a></p>
 		   	</div>
 	    </div>
 
@@ -70,7 +75,7 @@
 		   	</div>
 
 		   	<div class="tear_map">
-	   			<p>주소 : 서울특별시 노원구 월게 1동</p>
+	   			<p><a onclick="find_road(this)">주소 : 서울특별시 노원구 월게 1동</a></p>
 		   	</div>
 	    </div>
 
@@ -88,7 +93,7 @@
 		   	</div>
 
 		   	<div class="tear_map">
-	   			<p>주소 : 서울 노원구 월계동 광운로 17-5</p>
+	   			<p><a onclick="find_road(this)">주소 : 서울 노원구 월계동 광운로 17-5</a></p>
 		   	</div>
 	    </div>
 
@@ -106,7 +111,7 @@
 		   	</div>
 
 		   	<div class="tear_map">
-	   			<p>주소 : 서울특별시 노원구 월계동</p>
+	   			<p><a onclick="find_road(this)">주소 : 서울특별시 노원구 월계동</a></p>
 		   	</div>
 	    </div>
 
@@ -124,7 +129,7 @@
 		   	</div>
 
 		   	<div class="tear_map">
-	   			<p>주소 : 서울특별시 노원구 월계1동 470-2</p>
+	   			<p><a onclick="find_road(this)">주소 : 서울특별시 노원구 월계1동 470-2</a></p>
 		   	</div>
 	    </div>
 
@@ -142,7 +147,7 @@
 		   	</div>
 
 		   	<div class="tear_map">
-	   			<p>주소 : 서울시 노원구 광운로 37-1</p>
+	   			<p><a onclick="find_road(this)">주소 : 서울시 노원구 광운로 37-1</a></p>
 		   	</div>
 	    </div>
 
@@ -160,7 +165,7 @@
 		   	</div>
 
 		   	<div class="tear_map">
-	   			<p>주소 : 서울특별시 노원구 월계동 402-6</p>
+	   			<p><a onclick="find_road(this)">주소 : 서울특별시 노원구 월계동 402-6</a></p>
 		   	</div>
 	    </div>
 
@@ -178,7 +183,7 @@
 		   	</div>
 
 		   	<div class="tear_map">
-	   			<p>주소 : 서울특별시 강북구 수유3동 178-34</p>
+	   			<p><a onclick="find_road(this)">주소 : 서울특별시 강북구 수유3동 178-34</a></p>
 		   	</div>
 	    </div>
 
@@ -196,7 +201,7 @@
 		   	</div>
 
 		   	<div class="tear_map">
-	   			<p>주소 : 서울시 노원구 월계동 411번지</p>
+	   			<p><a onclick="find_road(this)">주소 : 서울시 노원구 월계동 411번지</a></p>
 		   	</div>
 	    </div>
 
@@ -214,7 +219,7 @@
 		   	</div>
 
 		   	<div class="tear_map">
-	   			<p>주소 : 서울특별시 노원구 월계1동 406-2</p>
+	   			<p><a onclick="find_road(this)">주소 : 서울특별시 노원구 월계1동 406-2</a></p>
 		   	</div>
 	    </div>
 
@@ -232,7 +237,7 @@
 		   	</div>
 
 		   	<div class="tear_map">
-	   			<p>주소 : 서울특별시 노원구 월계1동 465-9</p>
+	   			<p><a onclick="find_road(this)">주소 : 서울특별시 노원구 월계1동 465-9</a></p>
 		   	</div>
 	    </div>
 
@@ -250,7 +255,7 @@
 		   	</div>
 
 		   	<div class="tear_map">
-	   			<p>주소 : 서울특별시 노원구 광운로 57</p>
+	   			<p><a onclick="find_road(this)">주소 : 서울특별시 노원구 광운로 57</a></p>
 		   	</div>
 	    </div>
 
@@ -268,7 +273,7 @@
 		   	</div>
 
 		   	<div class="tear_map">
-	   			<p>주소 : 서울 노원구 광운로 17-13</p>
+	   			<p><a onclick="find_road(this)">주소 : 서울 노원구 광운로 17-13</a></p>
 		   	</div>
 	    </div>
 
@@ -286,7 +291,7 @@
 		   	</div>
 
 		   	<div class="tear_map">
-	   			<p>주소 : 서울특별시 노원구 월계동 379-36</p>
+	   			<p><a onclick="find_road(this)">주소 : 서울특별시 노원구 월계동 379-36</a></p>
 		   	</div>
 	    </div>
 
@@ -304,7 +309,7 @@
 		   	</div>
 
 		   	<div class="tear_map">
-	   			<p>주소 : 서울특별시 노원구 광운로 46</p>
+	   			<p><a onclick="find_road(this)">주소 : 서울특별시 노원구 광운로 46</a></p>
 		   	</div>
 	    </div>
 
@@ -322,7 +327,7 @@
 		   	</div>
 
 		   	<div class="tear_map">
-	   			<p>주소 : 서울특별시 노원구 월계동 429-6</p>
+	   			<p><a onclick="find_road(this)">주소 : 서울특별시 노원구 월계동 429-6</a></p>
 		   	</div>
 	    </div>
 
@@ -340,7 +345,7 @@
 		   	</div>
 
 		   	<div class="tear_map">
-	   			<p>주소 : 서울특별시 노원구 광운로 67</p>
+	   			<p><a onclick="find_road(this)">주소 : 서울특별시 노원구 광운로 67</a></p>
 		   	</div>
 	    </div>
 
@@ -358,7 +363,7 @@
 		   	</div>
 
 		   	<div class="tear_map">
-	   			<p>주소 : 서울특별시 노원구 광운대학교 기념관</p>
+	   			<p><a onclick="find_road(this)">주소 : 서울특별시 노원구 광운대학교 기념관</a></p>
 		   	</div>
 	    </div>
 
@@ -376,7 +381,21 @@
 		   	</div>
 
 		   	<div class="tear_map">
-	   			<p>주소 : 서울 노원구 광운로3길 6, 1층 (월계동) </p>
+	   			<p><a onclick="find_road(this)">주소 : 서울 노원구 광운로3길 6, 1층 (월계동) </a></p>
+		   	</div>
+	    </div>
+
+		<div style="float: left; margin-top: 30px;" id="20" >
+		   	<div class="random_header" style="color:#FFFFFF;"><!--버거킹-->
+		   		오늘의 밥집
+		   	</div>
+
+		   	<div class="random_content" id="random_content">
+		   		<img src="img/random_food.png">
+		   	</div>
+
+		   	<div class="random_select">
+	   			<button onclick="random_click(this, 19);">돌리기</button>
 		   	</div>
 	    </div>
 

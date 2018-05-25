@@ -3,6 +3,7 @@
 <head>
 	<title>1성 음식점</title>
 	<link rel="stylesheet" type="text/css" href="tear.css">
+	<script type="text/javascript" src="main.js"></script>
 </head>
 <body>
 <div class="frame">
@@ -11,15 +12,19 @@
 	</div>
 	<!-- //header -->
 	<div class="container">
-	    <div class="navi">
+	    <div class="navi" id="my_navi">
 	      <ul class="navi-list">
 	        <li class="navi-item"><a href="#1" class="navi-link">치킨클럽</a></li>
 	        <li class="navi-item"><a href="#2" class="navi-link">허광식</a></li>
 	        <li class="navi-item"><a href="#3" class="navi-link">배불뚜기</a></li>
 	        <li class="navi-item"><a href="#4" class="navi-link">하늘푸름</a></li>
+	        <li class="navi-item"><a href="#5" class="navi-link">오늘의 밥집</a></li>
 	      </ul>
 	    </div>
 	    <!-- //navi -->
+	    <script type="text/javascript">
+	      new Floating(document.getElementById('my_navi'),(document.body.clientWidth/2) + 530,10,0,0)
+	    </script>
 	    
 	    <div class="content">
 
@@ -37,7 +42,7 @@
 		   	</div>
 
 		   	<div class="tear_map">
-	   			<p>주소 : 서울특별시 노원구 월계동 379-2</p>
+	   			<p><a onclick="find_road(this)">주소 : 서울특별시 노원구 월계동 379-2</a></p>
 		   	</div>
 	    </div>
 
@@ -55,7 +60,7 @@
 		   	</div>
 
 		   	<div class="tear_map">
-	   			<p>주소 : 서울특별시 노원구 광운로1길 8</p>
+	   			<p><a onclick="find_road(this)">주소 : 서울특별시 노원구 광운로1길 8</a></p>
 		   	</div>
 	    </div>
 
@@ -73,7 +78,7 @@
 		   	</div>
 
 		   	<div class="tear_map">
-	   			<p>주소 : 서울특별시 노원구 월계1동 428-3</p>
+	   			<p><a onclick="find_road(this)">주소 : 서울특별시 노원구 월계1동 428-3</a></p>
 		   	</div>
 	    </div>
 
@@ -83,7 +88,7 @@
 		   	</div>
 
 		   	<div class="tear_img">
-		   		<img src="img/hanl.png" width="100%" height="100%">
+		   		<img src="img/하늘푸름.png" width="100%" height="100%">
 		   	</div>
 
 		   	<div class="tear_content">
@@ -91,7 +96,21 @@
 		   	</div>
 
 		   	<div class="tear_map">
-	   			<p>주소 : 서울특별시 노원구 월계1동 428-3</p>
+	   			<p><a onclick="find_road(this)">주소 : 서울특별시 노원구 월계1동 428-3</a></p>
+		   	</div>
+	    </div>
+
+		<div style="float: left; margin-top: 30px;" id="5" >
+		   	<div class="random_header" style="color:#FFFFFF;"><!--버거킹-->
+		   		오늘의 밥집
+		   	</div>
+
+		   	<div class="random_content" id="random_content">
+		   		<img src="img/random_food.png">
+		   	</div>
+
+		   	<div class="random_select">
+	   			<button onclick="random_click(this, 4);">돌리기</button>
 		   	</div>
 	    </div>
 

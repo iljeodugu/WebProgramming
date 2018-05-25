@@ -1,3 +1,12 @@
+p{
+  margin-left: 10px;
+  text-align: center;
+}
+
+p > a{
+  margin-left: 10px;
+  text-align: center;
+}
 
 .frame {
   width: 1000px;
@@ -26,7 +35,6 @@
 }
 
 .navi {
-  float: left;
   width: 150px;
   background: #333;
   color: #fff;
@@ -53,6 +61,7 @@
 
 .content {
   float: left;
+  margin-left: 125px;
   width: 750px;
 }
 
@@ -127,7 +136,7 @@ iframe{
 }
 
 button{
-  background:#1AAB8A;
+  background:#8A0829;
   color:#fff;
   border:none;
   position:relative;
@@ -140,7 +149,7 @@ button{
 }
 button:hover{
   background:#fff;
-  color:#1AAB8A;
+  color:#8A0829;
 }
 button:before,button:after{
   content:'';
@@ -149,7 +158,7 @@ button:before,button:after{
   right:0;
   height:2px;
   width:0;
-  background: #1AAB8A;
+  background: #8A0829;
   transition:400ms ease all;
 }
 button:after{
@@ -161,4 +170,35 @@ button:after{
 button:hover:before,button:hover:after{
   width:100%;
   transition:800ms ease all;
+}
+
+.random_header{
+  height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #585858;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.random_content{
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  vertical-align: middle;
+  width: 730px;
+  height: 400px;
+}
+
+.random_select{
+  float: left;
+  width: 750px;
+  text-align: center;
+  line-height: 12px;
+  margin-top: 10px;
+}
+
+a.hover{
+  color:red;
 }

@@ -1,3 +1,9 @@
+p{
+  margin-left: 10px;
+  text-align: center;
+}
+
+
 body {
   font:14px/1.8 Arial, Helvetica, sans-serif;
 }
@@ -79,7 +85,6 @@ td.first_line{
 }
 
 .navi {
-  float: left;
   width: 150px;
   background: #333;
   color: #fff;
@@ -106,6 +111,7 @@ td.first_line{
 
 .content {
   float: left;
+  margin-left: 125px;
   width: 750px;
 }
 
