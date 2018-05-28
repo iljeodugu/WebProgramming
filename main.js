@@ -8,6 +8,7 @@ function Floating(FloatingObj,MarginX,MarginY,Percentage,setTime)
     this.FloatingObj.style.position = "absolute";
     this.Body = null;
     this.setTimeOut = null;
+    this.FloatingObj.style.left = MarginX + "px";
     this.FloatingObj.style.margin = "0px 0px 0px 0px";
     this.Run();
 }
@@ -78,5 +79,5 @@ function find_road(content)
 {
     locate = content.text.split(":")
     locate_url= "https://www.google.co.kr/maps/place/" + locate[1]
-    window.location.href= locate_url
+    window.open(locate_url, '_blacnk');
 }
