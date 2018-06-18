@@ -81,3 +81,39 @@ function find_road(content)
     locate_url= "https://www.google.co.kr/maps/place/" + locate[1]
     window.open(locate_url, '_blacnk');
 }
+
+function getUrlParams() {
+    var params = {};
+    window.location.search.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(str, key, value) { params[key] = value; });
+    return params;
+} 
+
+$(document).ready(function()
+{
+    $(".tear_header").click(function(){
+        $(this).siblings().slideToggle();
+    });
+    $(".tear_img").hide();
+    $(".tear_content").hide();
+    $(".tear_map").hide();
+
+    var sProtocol = window.location.href;
+    var temp = sProtocol.split("/");
+    var last_str;
+    $(temp).each(function(i, e){
+        last_str=e
+    })
+    temp = last_str.split("#")
+    var str = "#" + temp[1]
+    $(str).children(".tear_img").show()
+    $(str).children(".tear_content").show()
+    $(str).children(".tear_map").show()
+
+    $(".navi-item").click(function()
+    {
+        var scrollPosition = $($(this).children("a").attr("where")).offset().top;
+        $('html, body').animate({
+            scrollTop: scrollPosition
+        }, 500);
+    });
+});
